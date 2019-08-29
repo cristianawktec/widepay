@@ -1,3 +1,30 @@
+# Intrução de Uso
+
+Repositório do projeto:
+https://github.com/cristianawktec/widepay
+
+
+Dados de Acesso:
+
+- Admin
+  Pode Inserir e visualizar usuários e visualizar todas as URLs
+  login: admin@awk.com
+  senha: 1234
+
+ - Usuários
+   Pode Inserir URL e visualizar apenas suas urls 
+   login: cristianms.awk@gmail.com
+   senha: 1234
+
+ Hospedagem na AWS
+
+
+ Mais sobre o projeto
+ 	Desenvolvido em PHP com framework CodeIgniter e banco MySql
+ 	frontend usando bootstrap, jquery, ajax
+
+============================================================================================
+
 # Desafio WideSoft
 
 Este é o teste que disponibilizamos para aqueles que têm interesse em fazer parte do nosso

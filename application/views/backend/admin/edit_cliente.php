@@ -32,14 +32,6 @@ foreach ($single_cliente_info as $row) {
                                 <input type="email" name="email" class="form-control" id="field-1" value="<?php echo $row['email']; ?>">
                             </div>
                         </div>
-
-                        <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label"><?php echo get_phrase('URL'); ?></label>
-
-                            <div class="col-sm-5">
-                                <input type="text" name="url" class="form-control" id="field-1" value="<?php echo $row['url']; ?>">
-                            </div>
-                        </div>
                         
                         <div class="form-group">
                             <label class="col-sm-3 control-label"><?php echo get_phrase('Foto'); ?></label>
