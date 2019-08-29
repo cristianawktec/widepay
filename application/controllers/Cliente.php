@@ -90,6 +90,15 @@ class Cliente extends CI_Controller {
             }
         }
 
+        //add url
+        if ($task == "create") {//echo"<pre><br>add url ";print_r($GLOBALS);echo"</pre>";exit;
+            //echo "<br>id: ".$_POST['cliente_id'];exit;
+            $cliente_id = $_POST['cliente_id'];
+            $this->crud_model->save_cliente_url($cliente_id);
+            redirect(base_url() . 'index.php?cliente/profile');
+        }
+
+
         $data['page_name'] = 'edit_profile';
         $data['page_title'] = get_phrase('profile');
         $this->load->view('backend/index', $data);

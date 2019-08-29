@@ -3,7 +3,7 @@ $cliente_id = $this->session->userdata('login_user_id');
 //echo "<br>id: ".$cliente_id;
 //echo "<br>count:";echo $this->crud_model->count_urls($cliente_id);
 ?>
-<button onclick="showAjaxModal('<?php echo base_url();?>index.php?modal/popup/add_urls/');" 
+<button onclick="showAjaxModal('<?php echo base_url();?>index.php?modal/popup/add_url/');" 
     class="btn btn-primary pull-right">
         <?php echo "Adicionar URL"; ?>
 </button>

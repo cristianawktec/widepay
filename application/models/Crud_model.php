@@ -180,6 +180,14 @@ class Crud_model extends CI_Model {
         $cliente_id  =   $this->db->insert_id();
         move_uploaded_file($_FILES["image"]["tmp_name"], "uploads/cliente_image/" . $cliente_id . '.jpg');
     }
+
+    function save_cliente_url()
+    {   //echo"<pre><br>add url ";print_r($GLOBALS);echo"</pre>";exit;
+        $data['endereco']   = $_POST['url'];
+        $data['cliente_id'] = $_POST['cliente_id'];
+        //echo "<pre><br>dados: ";print_r($data);echo"</pre>";exit;
+        $this->db->insert('url',$data);
+    }
     
     function select_urls()
     {

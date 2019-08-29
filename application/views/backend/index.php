@@ -44,6 +44,7 @@ $account_type   = $this->session->userdata('login_type');
 
         </div>
         <?php include 'modal.php'; ?>
+        <?php include 'modal_cliente.php'; ?>
         <?php include 'includes_bottom.php'; ?>
 
     </body>
