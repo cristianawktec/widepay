@@ -16,14 +16,14 @@ Dados de Acesso:
    login: cristianms.awk@gmail.com
    senha: 1234
 
- Hospedagem na AWS
-
+ Hospedagem na webhost
+  https://widepay.000webhostapp.com/
 
  Mais sobre o projeto
  	Desenvolvido em PHP com framework CodeIgniter e banco MySql
  	frontend usando bootstrap, jquery, ajax
 
-============================================================================================
+================================================================================
 
 # Desafio WideSoft
 

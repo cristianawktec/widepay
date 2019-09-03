@@ -11,7 +11,19 @@
     </thead>
 
     <tbody>
-        <?php foreach ($select_urls as $row) { ?>   
+        <?php foreach ($select_urls as $row) { 
+
+            $info = parse_url($_SERVER["HTTP_REFERER"]);
+            //echo"<pre><br>info: ";print_r($info);"</pre><br>";
+            echo"<br>host: ".$info['host'];
+            echo"<br>url: ".$row['endereco'];
+            if(strpos($info['host'], $row['endereco']) !== false) {
+                echo"aqui1";
+            } else {
+               echo"aqui2";
+            }
+
+            ?>   
             <tr>
                 <td><?php echo $row['name']?></td>
                 <td><?php echo $row['endereco']?></td>
@@ -23,8 +35,8 @@
 </div>
 
 
-
 <script type="text/javascript">
+
     jQuery(window).load(function ()
     {
         var $ = jQuery;

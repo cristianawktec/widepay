@@ -182,6 +182,9 @@ class Crud_model extends CI_Model {
 
     function save_cliente_url()
     {   //echo"<pre><br>add url ";print_r($GLOBALS);echo"</pre>";exit;
+ if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$_POST['url'])) {
+  $websiteErr = "Invalid URL"; 
+}
         $data['endereco']   = $_POST['url'];
         $data['cliente_id'] = $_POST['cliente_id'];
         //echo "<pre><br>dados: ";print_r($data);echo"</pre>";exit;
